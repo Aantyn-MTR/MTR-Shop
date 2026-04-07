@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Documentation Portal</title>
+    <style>
+        :root {
+            --primary-blue: #004a99;
+            --safety-yellow: #ffcc00;
+            --dark-grey: #333;
+            --light-grey: #f4f4f9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--light-grey);
+            color: var(--dark-grey);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 4px solid var(--safety-yellow);
+            width: 100%;
+            max-width: 600px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            margin: 10px 0;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .doc-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+            border-left: 5px solid var(--primary-blue);
+        }
+
+        .doc-card:active {
+            transform: scale(0.98);
+            background-color: #ebebeb;
+        }
+
+        .doc-info h2 {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .doc-info p {
+            margin: 5px 0 0;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .icon {
+            font-size: 1.5rem;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shop Safety Docs</h1>
+        <p>Powered by Github</p>
+    </header>
+
+    <div class="container">
+        <a href="docs/emergency-procedures.pdf" class="doc-card">
+            <div class="doc-info">
+                <h2>Emergency Procedures</h2>
+                <p>Updated: April 2026</p>
+            </div>
+            <div class="icon">📄</div>
+        </a>
+
+        <a href="docs/sds-manual.pdf" class="doc-card">
+            <div class="doc-info">
+                <h2>SDS Manual</h2>
+                <p>Chemical Safety Data Sheets</p>
+            </div>
+            <div class="icon">⚠️</div>
+        </a>
+
+        <a href="docs/incident-report-form.pdf" class="doc-card">
+            <div class="doc-info">
+                <h2>Incident Report Form</h2>
+                <p>Digital Fillable Version</p>
+            </div>
+            <div class="icon">📝</div>
+        </a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Your Company Name <br> Safety Department Internal Use Only</p>
+    </footer>
+
+</body>
+</html>
